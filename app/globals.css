@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* gantt-task-react: task list zebra + chart colors in dark theme */
+.dark .gantt-chart-root ._3_ygE,
+.dark .gantt-chart-root ._3ZbQT {
+  border-color: rgb(51 65 85 / 0.95);
+  background-color: rgb(15 23 42);
+}
+.dark .gantt-chart-root ._2eZzQ {
+  border-right-color: rgb(51 65 85 / 0.95);
+}
+.dark .gantt-chart-root ._1nBOt {
+  background-color: rgb(15 23 42);
+  color: rgb(248 250 252);
+}
+.dark .gantt-chart-root ._1nBOt ._3lLk3,
+.dark .gantt-chart-root ._1nBOt ._2QjE6,
+.dark .gantt-chart-root ._1nBOt ._2TfEi {
+  color: rgb(226 232 240);
+}
+.dark .gantt-chart-root ._34SS0 {
+  background-color: rgb(30 41 59 / 0.75);
+  color: rgb(248 250 252);
+}
+.dark .gantt-chart-root ._34SS0:nth-of-type(even) {
+  background-color: rgb(51 65 85 / 0.65);
+  color: rgb(248 250 252);
+}
+.dark .gantt-chart-root ._34SS0 ._3lLk3 {
+  color: rgb(248 250 252);
+}
+.dark .gantt-chart-root ._34SS0 ._2QjE6,
+.dark .gantt-chart-root ._34SS0 ._2TfEi {
+  color: rgb(203 213 225);
+}
+.dark .gantt-chart-root ._3T42e {
+  background: rgb(30 41 59);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.45);
+}
+.dark .gantt-chart-root ._29NTg {
+  color: rgb(203 213 225);
+}
+.dark .gantt-chart-root ._2dZTy {
+  fill: rgb(15 23 42);
+}
+.dark .gantt-chart-root ._2dZTy:nth-child(even) {
+  fill: rgb(30 41 59);
+}
+.dark .gantt-chart-root ._3rUKi,
+.dark .gantt-chart-root ._RuwuK,
+.dark .gantt-chart-root ._1rLuZ {
+  stroke: rgb(51 65 85 / 0.9);
+}
+.dark .gantt-chart-root ._9w8d5 {
+  fill: rgb(226 232 240);
+}
+.dark .gantt-chart-root ._2q1Kt {
+  fill: rgb(203 213 225);
+}
+.dark .gantt-chart-root ._35nLX {
+  fill: rgb(30 41 59);
+  stroke: rgb(51 65 85 / 0.9);
+}
