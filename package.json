@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "canary",
+    "react": "rc",
+    "react-dom": "rc",
     "lucide-react": "latest",
     "@prisma/client": "latest",
     "next-auth": "latest",
@@ -20,14 +20,14 @@
     "tailwind-merge": "latest"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
+    "typescript": "latest",
+    "@types/node": "latest",
+    "@types/react": "rc",
+    "@types/react-dom": "rc",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "canary",
     "prisma": "latest"
   }
 }

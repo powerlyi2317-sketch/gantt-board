@@ -1,18 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* 여기에 프로젝트 관련 추가 설정이 들어갈 수 있습니다. */
-  
-  // 빌드 시 타입 오류가 있어도 일단 무시하고 배포를 진행하게 해주는 설정입니다.
+  // 빌드 시 타입 오류가 있어도 배포를 진행하게 해줍니다.
   typescript: {
     ignoreBuildErrors: true,
   },
   
-  // 기존에 에러를 유발했던 eslint 설정은 삭제하거나 
-  // 아래처럼 최신 방식(ignoreDuringBuilds)으로 깔끔하게 정리합니다.
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // 에러를 유발하는 eslint 섹션을 아예 삭제했습니다.
+  // 나중에 필요하면 다른 방식으로 설정할 수 있으니 지금은 지우는 게 정답입니다!
 };
 
 export default nextConfig;
